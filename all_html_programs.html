@@ -34,6 +34,31 @@
       border-radius: 10px;
       background: transparent;
       margin-bottom: 2vh;
+      position: relative;
+      overflow: hidden;
+      transition: all ease 0.4s;
+    }
+    Button::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: black;
+      left: 0;
+      bottom: -100%;
+      border-radius: 50%;
+      transition: all ease 0.4s;
+    }
+    span{
+      position: relative;
+      z-index: 99;
+    }
+    button:hover span{
+      color: white;
+    }
+    button:hover::after{
+      border-radius: 0;
+      bottom: 0;
     }
     .course_details{
       width:90%;
@@ -98,7 +123,7 @@
           </body>
       </html>
     </textarea>
-    <button onclick="copyText(1)">Copy Text</button>
+    <button onclick="copyText(1)"><span>Copy Text</span></button>
   </div>
 
   <div class="boxes photo_album">
@@ -120,7 +145,7 @@
       </body>
       </html>
     </textarea>
-    <button onclick="copyText(2)">Copy Text</button>
+    <button onclick="copyText(2)"><span>Copy Text</span></button>
   </div>
   
   <div class="boxes product_details">
@@ -165,7 +190,7 @@
 </body>
 </html>
     </textarea>
-    <button onclick="copyText(3)">Copy Text</button>
+    <button onclick="copyText(3)"><span>Copy Text</span></button>
   </div>
   
   <div class="boxes image_link">
@@ -203,7 +228,7 @@
 </body>
 </html>
     </textarea>
-    <button onclick="copyText(4 )">Copy Text</button>
+    <button onclick="copyText(4 )"><span>Copy Text</span></button>
   </div>
   
   <div class="course_details" >
@@ -239,7 +264,7 @@
 </body>
 </html>
       </textarea>
-      <button onclick="copyText(5.1)">Copy Text</button>
+      <button onclick="copyText(5.1)"><span>Copy Text</span></button>
     </div>
     
     <div class="bca_html">
@@ -267,7 +292,7 @@
 </body>
 </html>
       </textarea>
-      <button onclick="copyText(5.2)">Copy Text</button>
+      <button onclick="copyText(5.2)"><span>Copy Text</span></button>
     </div>
     
     <div class="bsc_html">
@@ -295,7 +320,7 @@
 </body>
 </html>
       </textarea>
-      <button onclick="copyText(5.3)">Copy Text</button>
+      <button onclick="copyText(5.3)"><span>Copy Text</span></button>
     </div>
     
     <div class="bcom_html">
@@ -323,7 +348,7 @@
 </body>
 </html>
       </textarea>
-      <button onclick="copyText(5.4)">Copy Text</button>
+      <button onclick="copyText(5.4)"><span>Copy Text</span></button>
     </div>
     
     <div class="bba_html">
@@ -351,7 +376,7 @@
 </body>
 </html>
       </textarea>
-      <button onclick="copyText(5.5)">Copy Text</button>
+      <button onclick="copyText(5.5)"><span>Copy Text</span></button>
     </div>
     
   </div>
@@ -378,7 +403,7 @@
       </body>
       </html>
     </textarea>
-    <button onclick="copyText(6)">Copy Text</button>
+    <button onclick="copyText(6)"><span>Copy Text</span></button>
   </div>
   
   <div class="boxes restaurant">
@@ -412,7 +437,7 @@
 </body>
 </html>
     </textarea>
-    <button onclick="copyText(7)">Copy Text</button>
+    <button onclick="copyText(7)"><span>Copy Text</span></button>
   </div>
   
   <div class="boxes syllabus">
@@ -456,7 +481,7 @@
 </body>
 </html>
     </textarea>
-    <button onclick="copyText(8)">Copy Text</button>
+    <button onclick="copyText(8)"><span>Copy Text</span></button>
   </div>
   
   <div class="boxes flag">
@@ -480,7 +505,7 @@
 </body>
 </html>
     </textarea>
-    <button onclick="copyText(9)">Copy Text</button>
+    <button onclick="copyText(9)"><span>Copy Text</span></button>
   </div>
   
   
