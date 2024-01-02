@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html programs</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body,html{
+      width: 100%;
+      height: 100%;
+    }
+    .boxes{
+      width: 100%;
+      border: 2px solid black;
+      min-height: 25vh;
+      margin-bottom: 2vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    textarea{
+      margin: 2vh 0;
+      overflow: hidden;
+    }
+    Button{
+      padding: 1.5vw 3vw;
+      border: 1px solid black;
+      border-radius: 10px;
+      background: transparent;
+      margin-bottom: 2vh;
+    }
+    .course_details{
+      width:90%;
+      min-height:50vh; 
+      background: lightyellow;
+      margin-left: 5%;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2vh;
+    }
+    h1{
+      margin: 2vh 0 1vh 0;
+    }
+    .course_details>div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="boxes college_details">
+    <h1>College Details</h1>
+    <textarea name="college_details" id="college_details" rows="8" cols="40">
+      // COLLEGE DETAILS 
+      <!DOCTYPE html>
+      <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Document</title>
+          </head>
+          <body>
+            <center><b><h2>
+              College Of Applied Science, Thamarassery 
+            </h2></b></center>
+            <hr />
+            <h3><b><U><strong>College Details</strong></u></b></h3>
+            <p><b>
+              college of applied science thamarassery <br /> 
+              korangad, thamarassery PO <br>
+              Kozhikode (Dist)
+            </b></p>
+            <h3><i><b><u>Departments</u></b></i></h3>
+            <h3><mark><b>Computer Department</b></mark></h3>
+            <h4>B.Sc Computer science (34 seats)</h4>
+            <h4>Bachelor in Computer Applications</h4>
+            
+            <h3><mark><b>Commerce Department</b></mark></h3>
+            <h4>B.com with computer applications (60 seats) </h4>
+            <h4>M.commerce (15 seats)</h4>
+            
+            <h3><mark><b>English Department</b></mark></h3>
+            <h4>BA English</h4>
+            <h4>MA English</h4>
+          </body>
+      </html>
+    </textarea>
+    <button onclick="copyText(1)">Copy Text</button>
+  </div>
+
+  <div class="boxes photo_album">
+    <h1>Photo Album</h1>
+    <textarea id="photo_album" rows="8" cols="40">
+      // PHOTO ALBUM       <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+      </head>
+      <body>
+        <img src="/images/IMG-20231227-WA0026.jpg" alt="image1" width="410px " height="500px" >
+        <img src="/images/IMG-20231227-WA0022.jpg" alt="img2" width="410px" height="500px">
+        <img src="/images/IMG-20231227-WA0018.jpg" alt="img3" width="410px" height="500px">
+        <img src="/images/IMG-20231227-WA0014.jpg" alt="img4" width="410px" height="500px">
+      </body>
+      </html>
+    </textarea>
+    <button onclick="copyText(2)">Copy Text</button>
+  </div>
+  
+  <div class="boxes product_details">
+    <h1>Product Details</h1>
+    <textarea id="product_details" rows="8" cols="40">
+      // PRODUCT DETAILS 
+      <!DOCTYPE html>
+      <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css" media="all">
+    img{
+      border: 1px solid black;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Product Details</h1>
+  
+  <img src="" alt="macBook" 
+  style="min-width:200px; min-height:150px; "/>
+  <h2>Mac Book Pro</h2>
+  <h3>13 inch MacBook Pro apple M1 chip with 8 core CPU</h3>
+  <h2>$15,900</h2>
+  <hr />
+  
+  <img src="" alt="printer">
+  <h2>Cannon PIXMA MG2470</h2>
+  <h3>Cannon PIXMA all in one inkjet printer </h3>
+  <h2>$3,499</h2>
+  <hr>
+  
+  <img src="" alt="scanner">
+  <h2>Cannon Scanner</h2>
+  <h3> Cannon Scanner LIDE 400 Scanner</h3>
+  <h2>$9,000</h2>
+  <hr>
+</body>
+</html>
+    </textarea>
+    <button onclick="copyText(3)">Copy Text</button>
+  </div>
+  
+  <div class="boxes image_link">
+    <h1>Image Link</h1>
+    <textarea id="image_link" rows="8" cols="40">
+      // IMAGE LINK
+      <!DOCTYPE html>
+      <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style type="text/css" media="all">
+    img{
+      border: 1px solid black;
+      min-width: 250px ;
+      min-height: 100px;
+    }
+  </style>
+</head>
+<body>{
+  <a href="https://www.google.com">
+    <img src="" alt="google" />
+  </a>
+  
+  <a href="https://www.instagram.com">
+      <img src="" alt="Instagram" />
+  </a>
+
+  <a href="https://www.facebook.com">
+    <img src="" alt="facebook" />
+  </a>
+  
+</body>
+</html>
+    </textarea>
+    <button onclick="copyText(4 )">Copy Text</button>
+  </div>
+  
+  <div class="course_details" >
+    <h1><u>Course Details</u></h1>
+    <div class="college_html">
+      <h1>College</h1>
+      <textarea id="college_html" rows="8" cols="40">
+        // COLLEGE.HTML
+        <!DOCTYPE html>
+        <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h2><center>
+    College Of Applied Science Thamarassery 
+  </center></h2>
+  <hr />
+  
+  <h3><b><U>College Details</u></b></h3>
+  <p><b>
+    college of applied science thamarassery <br /> 
+    korangad, thamarassery PO <br>
+    Kozhikode (Dist)
+  </b></p>
+  
+  <a href="bca.html">
+    <h2>Show Courses</h2>
+  </a>
+</body>
+</html>
+      </textarea>
+      <button onclick="copyText(5.1)">Copy Text</button>
+    </div>
+    
+    <div class="bca_html">
+      <h1>Bca</h1>
+      <textarea id="bca_html" rows="8" cols="40">
+        // BCA.HTML
+        <!DOCTYPE html>
+        <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Bachelor in Computer Applications</h1>
+  <p> As a 3 year undergraduate program, ther BCA is a popular choice of higher education</p>
+  <span>seats Available : 36</span>
+  <h3>fee - 17,000 </h3><br />
+  
+  <a href="bba.html">Prev</a> &nbsp;
+  <a href="College.html">HOME</a> &nbsp;
+  <a href="bsc.html">next</a> 
+  
+</body>
+</html>
+      </textarea>
+      <button onclick="copyText(5.2)">Copy Text</button>
+    </div>
+    
+    <div class="bsc_html">
+      <h1>Bsc</h1>
+      <textarea id="bsc_html" rows="8" cols="40">
+        // BSC.HTML
+        <!DOCTYPE html>
+        <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>B.Sc Computer Science</h1>
+  <p> As a 3 year undergraduate program, ther BSc is a popular choice of higher education</p>
+  <p>seats Available : 36</p>
+  <h3>fee - 18,500 </h3><br />
+  
+  <a href="bca.html">Prev</a> &nbsp;
+  <a href="College.html">HOME</a> &nbsp;
+  <a href="bcom.html">next</a> 
+  
+</body>
+</html>
+      </textarea>
+      <button onclick="copyText(5.3)">Copy Text</button>
+    </div>
+    
+    <div class="bcom_html">
+      <h1>Bcom</h1>
+      <textarea id="bcom_html" rows="8" cols="40">
+        // BCOM.HTML
+        <!DOCTYPE html>
+        <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Bachelor in commerce</h1>
+  <p> As a 3 year undergraduate program, ther B.com is a popular choice of higher education</p>
+  <p>seats Available : 36</p>
+  <h3>fee - 20,000 </h3><br />
+  
+  <a href="bsc.html">Prev</a> &nbsp;
+  <a href="College.html">HOME</a> &nbsp;
+  <a href="bba.html">next</a> 
+  
+</body>
+</html>
+      </textarea>
+      <button onclick="copyText(5.4)">Copy Text</button>
+    </div>
+    
+    <div class="bba_html">
+      <h1>Bba</h1>
+      <textarea id="bba_html" rows="8" cols="40">
+        //BBA.HTML
+        <!DOCTYPE html>
+        <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Bachelor of Business Administration</h1>
+  <p> As a 3 year undergraduate program, ther BBA is a popular choice of higher education</p>
+  <p>seats Available : 36</p>
+  <h3>fee - 15,000 </h3><br />
+  
+  <a href="bcom.html">Prev</a> &nbsp;
+  <a href="College.html">HOME</a> &nbsp;
+  <a href="bca.html">next</a> 
+  
+</body>
+</html>
+      </textarea>
+      <button onclick="copyText(5.5)">Copy Text</button>
+    </div>
+    
+  </div>
+  
+  <div class="boxes links">
+    <h1>Links</h1>
+    <textarea id=links rows="8" cols="40">
+      // links
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Links Page</title>
+      </head>
+      <body>
+          <h1>Links Page</h1>
+          <!-- Page Link -->
+          <p><a href="page.html">Page Link</a></p>
+          <!-- File Link -->
+          <p><a href="example.txt" download>File Link (Download)</a></p>
+          <!-- External Link -->
+          <p><a href="https://www.example.com" target="_blank">External Link</a></p>
+      </body>
+      </html>
+    </textarea>
+    <button onclick="copyText(6)">Copy Text</button>
+  </div>
+  
+  <div class="boxes restaurant">
+    <h1>Restaurant</h1>
+    <textarea id="restaurant" rows="8" cols="40">
+      // RESTAURANT
+      <!DOCTYPE html>
+      <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1><center>Restaurant 77'</center></h1>
+  <h3><u>MENU</u></h3>
+  
+  <dl>
+    <dt><b>Cool Drinks</b></dt>
+    <dd>orange juice</dd>
+    <dd>Mango juice</dd>
+    <dd>Apple juice</dd>
+    
+    <dt><b>Hot Drinks</b></dt>
+    <dd>Tea</dd>
+    <dd>Coffee</dd>
+    <dd>Masala Chaiii</dd>
+    
+  </dl>
+</body>
+</html>
+    </textarea>
+    <button onclick="copyText(7)">Copy Text</button>
+  </div>
+  
+  <div class="boxes syllabus">
+    <h1>Syllabus</h1>
+    <textarea id="syllabus" rows="8" cols="40">
+      // SYLLABUS.HTML
+      <!DOCTYPE html>
+      <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <ul type="disk">
+    <li>BCA</li>
+    <ul>
+      <li>1ST YEAR</li>
+      <ol>
+        <li>COMPUTER FUNDAMENTALS </li>
+        <li>MATHEMATICS</li>
+        <li>BUSINESS COMMUNICATION</li>
+      </ol>
+      
+      <li>2ND YEAR</li>
+      <ol>
+        <li>C PROGRAMMING </li>
+        <li>MATHEMATICS</li>
+        <li>DIGITAL ELECTRONICS</li>
+      </ol>
+      
+      <li>3RD YEAR</li>
+      <ol>
+        <li>ARTIFICIAL INTELLIGENCE</li>
+        <li>THEOREM OF COMPUTING</li>
+        <li>NETWORK SECURITY</li>
+      </ol>
+    </ul>
+  </ul>
+</body>
+</html>
+    </textarea>
+    <button onclick="copyText(8)">Copy Text</button>
+  </div>
+  
+  <div class="boxes flag">
+    <h1>Flag</h1>
+    <textarea id="flag" rows="8" cols="40">
+      // FLAG
+      <!DOCTYPE html>
+      <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div style="width:300px; height:200px;">
+    <div style="height:33.33%; background:#FF9933;"></div>
+    <div style="height:33.33%; background:#FFFFFF;"></div>
+    <div style="height:33.33%; background:#138808;"></div>
+  </div>
+</body>
+</html>
+    </textarea>
+    <button onclick="copyText(9)">Copy Text</button>
+  </div>
+  
+  
+  <script>
+    function copyText(num) {
+      if(num===1){
+        let text = document.getElementById('college_details')
+        navigator.clipboard.writeText(text.textContent)
+      }else
+      if(num===2){
+        let text = document.getElementById('photo_album')
+        navigator.clipboard.writeText(text.textContent)
+      }else 
+      if(num===3){
+        let text = document.getElementById('product_details')
+        navigator.clipboard.writeText(text.textContent)
+      }else 
+      if(num===4){
+        let text = document.getElementById('image_link')
+        navigator.clipboard.writeText(text.textContent)
+      }else 
+      if(num===5.1){
+        let text = document.getElementById('college_html')
+        navigator.clipboard.writeText(text.textContent)
+      }else 
+      if(num===5.2){
+        let text = document.getElementById('bca_html')
+        navigator.clipboard.writeText(text.textContent)
+      }else 
+      if(num===5.3){
+        let text = document.getElementById('bsc_html')
+        navigator.clipboard.writeText(text.textContent)
+      }else
+      if(num===5.4){
+        let text = document.getElementById('bcom_html')
+        navigator.clipboard.writeText(text.textContent)
+      }else
+      if(num===5.5){
+        let text = document.getElementById('bba_html')
+        navigator.clipboard.writeText(text.textContent)
+      }else
+      if(num===6){
+        let text = document.getElementById('links')
+        navigator.clipboard.writeText(text.textContent)
+      }else
+      if(num===7){
+        let text = document.getElementById('restaurant')
+        navigator.clipboard.writeText(text.textContent)
+      }else
+      if(num===8){
+        let text = document.getElementById('syllabus')
+        navigator.clipboard.writeText(text.textContent)
+      }else
+      if(num===9){
+        let text = document.getElementById('flag')
+        navigator.clipboard.writeText(text.textContent)
+      }
+    }
+  </script>
+</body>
+</html>
