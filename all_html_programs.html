@@ -30,6 +30,7 @@
       width: 80%;
       height: 15vh;
       font-size: 3vw;
+      
     }
     Button{
       padding: 2vw 4vw;
@@ -77,6 +78,9 @@
       align-items: center;
       margin-bottom: 2vh;
     }
+    .course_details textarea{
+      width: 80vw;
+    }
     h1{
       font-size: 6vw;
       margin: 2vh 0 1vh 0;
@@ -92,7 +96,7 @@
 <body>
 
   <div class="boxes college_details">
-    <h1 style="font-size:10vw;">College Details</h1>
+    <h1 >College Details</h1>
     <textarea name="college_details" id="college_details" rows="8" cols="40">
 <!DOCTYPE html>
 <html lang="en">
@@ -558,6 +562,12 @@
         navigator.clipboard.writeText(text.textContent)
       }
     }
+    
+    
+    let textarea = document.querySelectorAll('textarea')
+    textarea.forEach(item=>{
+      item.readOnly = true
+    })
   </script>
 </body>
 </html>
