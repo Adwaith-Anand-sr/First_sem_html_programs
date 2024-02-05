@@ -507,6 +507,59 @@
   </div>
   
   
+  
+  <div class="boxes infrastructure">
+    <h1>college infrastructure</h1>
+    <textarea id="infrastructure" rows="8" cols="40">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <table border="1" cellpadding="10">
+    <tr>
+      <th>courses</th>
+      <td>
+        <h3>bsc</h3>
+        <h3>mca</h3>
+        <h3>BCA</h3>
+        <h3>bcom</h3>
+        <h3>ma</h3>
+        <h3>ba</h3>
+      </td>
+    </tr>
+    <tr>
+      <th>college</th>
+      <td>
+        <h3>ihrd thamarassery</h3>
+        <h3>ihrd Kozhikode</h3>
+        <h3>ihrd mukkam</h3>
+        <h3>ihrd nathapuram</h3>
+      </td>
+    </tr>
+    <tr>
+      <th>facilities</th>
+      <td>
+        <h3>Library</h3>
+        <h3>lab</h3>
+        <h3>auditorium</h3>
+        <h3>wifi</h3>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+    </textarea>
+        <button onclick="copyText(10)"><span>Copy Text</span></button>
+  </div>
+
+
+
+
   <script>
     function copyText(num) {
       if(num===1){
@@ -559,6 +612,10 @@
       }else
       if(num===9){
         let text = document.getElementById('flag')
+        navigator.clipboard.writeText(text.textContent)
+      }else
+      if(num===10){
+        let text = document.getElementById('infrastructure')
         navigator.clipboard.writeText(text.textContent)
       }
     }
