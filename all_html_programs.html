@@ -604,6 +604,47 @@
   </div>
 
 
+  <div class="boxes form">
+    <h1>form</h1>
+    <textarea id="form" rows="8" cols="40">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+    <form action="" method="get" accept-charset="utf-8">
+       name : <input type="text" name="" id="" value="" /><br />
+      gender : male <input type="radio" name="gender" id="" /> female <input type="radio" name="gender" id="gender" /><br>
+      address : <input type="text"  />
+      qualification : 
+        <select name="" id="">
+          <option value="">BCA</option>
+          <option value="">MCA</option>
+          <option value="">M.COM</option>
+          <option value="">B.COM</option>
+          <option value="">+2</option>
+          <option value="">SSLC</option>
+        </select><br>
+      language:
+        Hindi <input type="checkbox" name="" id="" />
+        Malayalam <input type="checkbox" name="" id="" />
+        English <input type="checkbox" name="" id="" />
+      <center><input type="submit" name="" id="" value="submit" /></center>
+    </form>
+  </fieldset>
+</body>
+</html>
+    </textarea>
+    <button onclick="copyText(12)"><span>Copy Text</span></button>
+  </div>
+
+
+
 
   <script>
     function copyText(num) {
@@ -667,6 +708,12 @@
         let text = document.getElementById('table')
         navigator.clipboard.writeText(text.textContent)
       }
+      else
+      if(num===12){
+        let text = document.getElementById('form')
+        navigator.clipboard.writeText(text.textContent)
+      }
+    
     }
     
     
