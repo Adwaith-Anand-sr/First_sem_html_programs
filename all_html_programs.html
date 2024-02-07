@@ -559,6 +559,51 @@
 
 
 
+  <div class="boxes table">
+    <h1>train time</h1>
+    <textarea id="train" rows="8" cols="40">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <table style="text-transform:capitalize;"border="1" cellpadding="10" cellspacing="0">
+    <tr >
+      <th rowspan="2">Train name</th>
+      <th rowspan="2">Source</th>
+      <th rowspan="2">Destination</th>
+      <th colspan="2">time</th>
+    </tr>
+    <tr>
+      <th>areival</th>
+      <th>departure</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>
+    </textarea>
+    <button onclick="copyText(11)"><span>Copy Text</span></button>
+  </div>
+
+
 
   <script>
     function copyText(num) {
@@ -616,6 +661,10 @@
       }else
       if(num===10){
         let text = document.getElementById('infrastructure')
+        navigator.clipboard.writeText(text.textContent)
+      }else
+      if(num===11){
+        let text = document.getElementById('table')
         navigator.clipboard.writeText(text.textContent)
       }
     }
